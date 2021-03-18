@@ -1,0 +1,407 @@
+@font-face {
+    font-family: 'Proto Grotesk Web';
+    src: url('ProtoGroteskWeb-Regular.eot');
+    src: local('Proto Grotesk Web Regular'), local('ProtoGroteskWeb-Regular'),
+        url('ProtoGroteskWeb-Regular.eot?#iefix') format('embedded-opentype'),
+        url('ProtoGroteskWeb-Regular.woff2') format('woff2'),
+        url('ProtoGroteskWeb-Regular.woff') format('woff'),
+        url('ProtoGroteskWeb-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proto Grotesk Web';
+    src: url('ProtoGroteskWeb-Bold.eot');
+    src: local('Proto Grotesk Web Bold'), local('ProtoGroteskWeb-Bold'),
+        url('ProtoGroteskWeb-Bold.eot?#iefix') format('embedded-opentype'),
+        url('ProtoGroteskWeb-Bold.woff2') format('woff2'),
+        url('ProtoGroteskWeb-Bold.woff') format('woff'),
+        url('ProtoGroteskWeb-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html {
+    background-color: #fff;
+    font-family: "Raleway", Arial, sans-serif;
+}
+
+main {
+    
+    background-color: #fff;
+    width:100%;
+    margin: auto;
+}
+
+h1,h2,h3 {font-family:'Proto Grotesk Web'!important;}
+
+h1, h2,h3, p {
+    text-decoration: none;
+    margin: auto;
+    padding: 10px 10px;
+}
+
+.red { 
+   color: red; 
+}
+
+.blue { 
+   color: blue; 
+}
+
+.big { 
+   font-size:5em; 
+}
+
+
+.item3 h1 {
+    font-size: 2em;}
+}
+
+p{
+    text-align: left;
+}
+footer p {
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+p{
+    font-size:0.7em;
+}
+
+
+
+
+img{
+    width:100%;
+    
+}
+
+div.gallery {
+    text-align: center;
+}
+
+figure {
+    display: inline-block;
+    margin:.25%;
+}
+
+ul{z-index:2 }
+
+
+/* HERO IMAGES*/
+.hero_image{
+    background-image:url("../images/project-1_hero.jpg");
+    background-repeat: no-repeat;
+    width:100%;
+    height:200px;
+    background-size:100%;  
+    background-position: center center;
+    transition: .5s ease-in-out;
+  }
+
+  .hero_image:hover{
+    background-size:105%;
+  }
+
+/* HEADER AND NAV BAR */
+#logo {
+    text-align: start;
+    float:left;
+    width: 20%;
+    margin: 0 50px;
+    
+}
+
+nav {
+    float:right;
+    width: 60%;
+    
+}
+
+/* What people said about us */
+.reviewBox {
+    width: 100%;
+    border: white solid 2px;
+    padding: 10px;
+    display: block;
+    color:black;
+    background:darkgrey;
+    position: relative;
+
+}
+
+.reviewBtn {
+    padding: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.reviewer {
+    width: 10%;
+    height: 0;
+    padding-top: 10%;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+}
+#reviewer1{
+    background-image: url(../images/bjarke.jpg);
+     background-size: cover;
+}
+#reviewer2{
+    background-image: url(../images/equitone.jpg);
+     background-size: cover;
+}
+#reviewer3{
+    background-image: url(../images/bohlin.jpg);
+     background-size: cover;
+}    
+.reviewBtn{
+    background-color: teal; 
+    color:white;
+    font-weight: bold;
+}
+
+/* ORDER THE MAGAZINE */
+
+.order{
+    margin: 50px auto;
+    width: 72.5%;
+    
+    background: darkgrey;
+}
+
+.yesBtn, .noBtn {
+    font-size: 0.7em;
+    background-color: teal; 
+    color:white;
+    font-weight: bold;
+    padding: 5px 50px;
+}
+
+.red {
+    color: red;
+}
+
+.teal {
+    color: teal;
+}
+
+/* START GRID LAYOUT */
+.item1 { grid-area: header; }
+.item2 { grid-area: slideshow; }
+.item3 { grid-area: mission; }
+.item4 { grid-area: services; }
+.item5 { grid-area: products; }
+.item6 { grid-area: result; }
+.item7 { grid-area: saveenergy; }
+.item8 { grid-area: partners; }
+.item9 { grid-area: completedproject; }
+.item10 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template:
+    'header header header header '
+    'slideshow slideshow slideshow slideshow'
+    'mission mission mission mission'
+      'services services services services'
+      'products products products products'
+      'result result result result'
+      'saveenergy saveenergy saveenergy saveenergy'    
+      'partners partners partners partners'
+      'completedproject completedproject completedproject completedproject'
+      'footer footer footer footer';
+  grid-gap: 0px;
+  padding: 0px;
+}
+
+.grid-container > div, header {
+  
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* SLIDESHOW */
+
+/* MISSION */
+.item3 p {
+    width: 80%;
+}
+
+/* SERVICES */
+.item4, .item5, .item6, .item7{
+    margin: 30px 70px;
+}
+
+.services p {
+    text-align: left;
+}
+/* PARTNERS */
+.item8{
+    display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.item8 > div {
+  width: 50%;
+  margin:0 20px;
+  text-align: center;
+}
+
+/* COMPLETED PROJECTS */
+.item9{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ), url(../images/slide_2.jpg);
+    background-attachment: fixed;
+}
+.item9 h2, .item9 p {
+    width: 80%;
+    color: white;
+    font-weight: bold;
+}
+
+   /* OUR SERVICES PAGE for small screen */  
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+    margin: 20px 10px;
+}
+
+.flex-item-left {
+  flex: 100%;
+    padding: 10px;
+}
+
+.flex-item-right {
+  flex: 100%;
+    padding: 10px;
+}
+
+/* ABOUT US PAGE for big screen */  
+
+
+
+.contactform{
+    width: 80%;
+    margin: auto;
+}
+
+.contact{
+   
+    padding: 10px;
+}
+
+/* For Screen bigger than 500px */
+	@media (min-width: 500px) {
+        
+		.grid-container {
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-areas:
+			'header header header header '
+    'slideshow slideshow slideshow slideshow'
+    'mission mission mission mission'
+     'services services services services'
+      'products products products products'
+      'result result result result'
+      'saveenergy saveenergy saveenergy saveenergy'   
+      'partners partners partners partners'
+      'completedproject completedproject completedproject completedproject'
+      'footer footer footer footer';
+  grid-gap: 0px;
+		}
+      /* PARTNERS */
+.item8{
+    display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.item8 > div {
+  width: 50%;
+  margin:0 10px;
+  text-align: center;
+}  
+
+    
+    
+/* For Screen bigger than 800px */
+	}
+	@media (min-width: 800px) {
+		.grid-container {
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-areas:
+			'header header header header '
+    'slideshow slideshow slideshow slideshow'
+    'mission mission mission mission'
+      'services services products products'
+      'result result saveenergy saveenergy'
+      'partners partners partners partners'
+      'completedproject completedproject completedproject completedproject'
+      'footer footer footer footer';
+  grid-gap: 0px;
+		}
+        
+        .item8{
+    display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.item8 > div {
+  width: 25%;
+  margin:0 80px;
+  text-align: center;
+} 
+        
+   /* OUR SERVICES PAGE for big screen */  
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+    margin: 30px 10px;
+}
+
+.flex-item-left {
+  flex: 30%;
+    padding: 10px;
+}
+
+.flex-item-right {
+  flex: 60%;
+    padding: 10px;
+}
+ /* ABOUT US PAGE for big screen */         
+
+.contact {
+    padding: 10px;
+}
+        
+        /* HERO IMAGES for big screen*/
+.hero_image{
+    
+    height:600px;
+   
+  }
+	}
+
+
+
